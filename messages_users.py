@@ -6,7 +6,7 @@ def get_users(messages):
     dict = {}
     for message in messages:
         name = message.split(":", 1)[0]
-        dict[name] = 1
+        dict[name + ":"] = 1
     return list(dict.keys())
 
 
